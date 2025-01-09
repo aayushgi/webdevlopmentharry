@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title > more about css selectors</title>
+</head>
+<style>
+     .boxes::before {
+        content: "I am css selector";
+        color: black;
+     }
+     
+     .boxes::after{
+        content: "mai last me bhi aa sakta hu";
+        color: cornflowerblue;
+     }
+    .boxes *{
+        color: cadetblue;
+        border: 2px solid black;
+
+    }
+    .box:first-child{
+        background-color: blueviolet;
+    }
+    input{
+        background-color: rgb(221, 238, 238);
+    }
+    .box::first-letter{
+        color: chartreuse;
+        font-size: 50px;
+
+    }
+    ::selection{
+        background-color: rgb(234, 141, 76);
+     }
+     
+</style>
+<body>
+    <div class="boxes">
+        <div class="box">i am 1st box</div>
+        <div class="box">i am a box</div>
+        <div>hey i am also a box</div>
+        <input type="text" placeholder="type ypur name here">
+    </div>
+</body>
+</html>
